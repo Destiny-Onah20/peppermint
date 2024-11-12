@@ -1,3 +1,8 @@
 {
-    "enabled": false
+    "enabled": false,
+    "mongo_service_name": "mongodb-atlas",
+    "database_name": "peppermint",
+    "collection_name": "users",
+    "user_id_field": "1",
+    "on_user_creation_function_name": "registerUser"
 }
