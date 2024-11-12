@@ -2,7 +2,7 @@ exports = async function(payload) {
     const { name, price, quantity } = JSON.parse(payload.body.text());
 
     // Validate required fields
-    if (!name || !price || !category) {
+    if (!name || !price || !quantity) {
         return {
             status: 400,
             body: JSON.stringify({ error: "Product name, price, and category are required." })
