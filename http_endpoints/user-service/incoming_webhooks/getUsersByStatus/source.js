@@ -1,5 +1,5 @@
 exports = async function(payload) {
-    const status = payload.query.status;
+    const { status } = payload.query;
 
     if (status !== "active" && status !== "inactive") {
         return {
