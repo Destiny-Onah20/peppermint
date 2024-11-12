@@ -1,5 +1,5 @@
 exports = async function(payload) {
-    const { name, price } = JSON.parse(payload.body.text());
+    const { name, price, quantity } = JSON.parse(payload.body.text());
 
     // Validate required fields
     if (!name || !price || !category) {
@@ -19,6 +19,7 @@ exports = async function(payload) {
     const product = {
         name,
         price,
+        quantity,
         inStock: true,
         createdAt: new Date()
     };
