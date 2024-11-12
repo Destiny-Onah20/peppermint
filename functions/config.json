@@ -12,5 +12,22 @@
     {
         "name": "myFunc",
         "private": true
+    },
+    {
+        "name": "resetPassword",
+        "private": false,
+        "disable_arg_logs": true
+    },
+    {
+        "name": "user-service_users",
+        "private": false,
+        "run_as_system": true,
+        "disable_arg_logs": true
+    },
+    {
+        "name": "user-service_getUsersByStatus",
+        "private": false,
+        "run_as_system": true,
+        "disable_arg_logs": true
     }
 ]
