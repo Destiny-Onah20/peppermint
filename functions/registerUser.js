@@ -1,5 +1,5 @@
 exports = async function(payload) {
-    const { email, password } = JSON.parse(payload.body.text());
+    const { email, password, name } = JSON.parse(payload.body.text());
     
     const usersCollection = context.services
         .get("mongodb-atlas")
@@ -13,6 +13,7 @@ exports = async function(payload) {
 
     const newUser = {
         email,
+        name,
         passwordHash: password,
         status: "active",
         createdAt: new Date()
