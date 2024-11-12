@@ -17,6 +17,6 @@ exports = async function(payload) {
 
     return {
         status: 200,
-        body: JSON.stringify(users)
+        body: JSON.parse(users)
     };
 };
