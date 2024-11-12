@@ -4,7 +4,7 @@ exports = async function(payload) {
     if (status !== "active" && status !== "inactive") {
         return {
             status: 400,
-            body: JSON.stringify({ error: "Invalid status. Must be 'active' or 'inactive'." })
+            body: JSON.parse({ error: "Invalid status. Must be 'active' or 'inactive'." })
         };
     }
 
