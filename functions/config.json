@@ -40,5 +40,9 @@
         "name": "fetchProducts",
         "private": false,
         "disable_arg_logs": true
+    },
+    {
+        "name": "handleUserRegistration",
+        "private": true
     }
 ]
