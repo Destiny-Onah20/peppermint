@@ -44,5 +44,11 @@
     {
         "name": "handleUserRegistration",
         "private": true
+    },
+    {
+        "name": "users_fetchProducts",
+        "private": false,
+        "run_as_system": true,
+        "disable_arg_logs": true
     }
 ]
