@@ -1,3 +1,4 @@
+
 exports = async function(payload) {
     const { email, password, name } = JSON.parse(payload.body.text());
     
@@ -14,7 +15,7 @@ exports = async function(payload) {
     const newUser = {
         email,
         name,
-        passwordHash: password,
+        password: passwordHash,
         status: "active",
         createdAt: new Date()
     };

@@ -1,3 +1,5 @@
+const bcrypt = require("bcrypt");
+
 exports = async function(payload) {
     const { email, password, name } = JSON.parse(payload.body.text());
     
@@ -11,10 +13,12 @@ exports = async function(payload) {
         return { status: 400, body: JSON.stringify({ message: "User already exists" }) };
     }
 
+    const passwordHash = await bcrypt.hash(password, 10);
+
     const newUser = {
         email,
         name,
-        passwordHash: password,
+        password: passwordHash,
         status: "active",
         createdAt: new Date()
     };
