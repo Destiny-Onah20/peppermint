@@ -1,0 +1,22 @@
+{
+    "properties": {
+        "name": {
+            "bsonType": "string"
+        },
+        "email": {
+            "bsonType": "string"
+        },
+        "password": {
+            "bsonType": "string"
+        },
+        "status": {
+            "bsonType": "string"
+        }
+    },
+    "required": [
+        "name",
+        "email",
+        "password",
+        "status"
+    ]
+}
