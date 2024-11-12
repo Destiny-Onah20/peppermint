@@ -1,5 +1,6 @@
 {
     "name": "peppermint",
     "provider_region": "aws-eu-west-2",
-    "deployment_model": "LOCAL"
+    "deployment_model": "LOCAL",
+    "environment": "development"
 }
