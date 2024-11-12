@@ -13,7 +13,7 @@ exports = async function(payload) {
         .db("peppermintt")
         .collection("users");
 
-    const users = await usersCollection.find({ status }).toArray();
+    const users = await usersCollection.find().toArray();
 
     return {
         status: 200,
