@@ -1,0 +1,16 @@
+[
+    {
+        "name": "registerUser",
+        "private": false,
+        "disable_arg_logs": true
+    },
+    {
+        "name": "getUserByStatus",
+        "private": false,
+        "disable_arg_logs": true
+    },
+    {
+        "name": "myFunc",
+        "private": true
+    }
+]
