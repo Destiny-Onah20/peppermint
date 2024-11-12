@@ -28,5 +28,5 @@ exports = async function(payload) {
     
     await usersCollection.insertOne(newUser);
 
-    return { status: 201, body: JSON.stringify({ message: "User registered successfully" }) };
+    return { status: 201, body: { message: "User registered successfully" } };
 };
