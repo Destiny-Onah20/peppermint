@@ -1,1 +1,13 @@
-{}
+{
+    "properties": {
+        "name": {
+            "bsonType": "string"
+        },
+        "price": {
+            "bsonType": "int"
+        },
+        "quantity": {
+            "bsonType": "string"
+        }
+    }
+}
