@@ -10,10 +10,10 @@ exports = async function(payload) {
 
     const usersCollection = context.services
         .get("mongodb-atlas")
-        .db("peppermintt")
+        .db("peppermint")
         .collection("users");
 
-    const users = await usersCollection.find().toArray();
+    const users = await usersCollection.find({ status }).toArray();
 
     return {
         status: 200,
