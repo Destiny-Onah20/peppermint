@@ -44,12 +44,14 @@
     },
     {
         "http_method": "GET",
-        "route": "/user-service/getUsersByStatus",
+        "route": "/getUsersByStatus",
         "function_name": "user-service_getUsersByStatus",
-        "validation_method": "NO_VALIDATION",
+        "secret_name": "pepp",
+        "validation_method": "SECRET_AS_QUERY_PARAM",
         "respond_result": true,
         "fetch_custom_user_data": false,
         "create_user_on_auth": false,
-        "disabled": false
+        "disabled": false,
+        "return_type": "EJSON"
     }
 ]
